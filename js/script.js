@@ -43,9 +43,7 @@ function backCall(e){
   }
 }
 
-
-function domLoaded(){
-
- document.addEventListener("deviceready", onDeviceReady, false);
- document.addEventListener("backbutton", backCall, false);
+window.onload=function(){
+    document.addEventListener("deviceready", onDeviceReady, false);
+    document.addEventListener("backbutton", backCall, false);
 }
